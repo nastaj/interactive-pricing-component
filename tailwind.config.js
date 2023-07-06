@@ -30,6 +30,10 @@ module.exports = {
       fontSize: {
         m: ["0.9375rem"],
       },
+      backgroundImage: {
+        "circle-pattern": "url('images/pattern-circles.svg')",
+        "bg-pattern": "url('images/bg-pattern.svg')",
+      },
     },
   },
   plugins: [],

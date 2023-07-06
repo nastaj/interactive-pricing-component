@@ -16,7 +16,55 @@
 
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
-  <body>
+  <body class="font-manrope flex flex-col place-items-center">
+    <header class="relative text-center h-96 pt-24">
+      <h1 class="text-xl font-extra-bold mb-2">
+        Simple, traffic-based pricing
+      </h1>
+      <p class="text-blue-grayish text-m">Sign-up for our 30 day trial.</p>
+      <p class="text-blue-grayish text-m">No credit card required.</p>
+    </header>
+
+    <main>
+      <section>
+        <label for="views-slider">100k pageviews</label>
+        <input type="range" id="views-slider" />
+        <h2>$16.00 <span>/ month</span></h2>
+        <div class="inline-flex items-center">
+          <label class="mr-3 select-none" for="billing-toggle"
+            >Monthly Billing</label
+          >
+          <div
+            class="relative inline-block h-4 w-8 cursor-pointer rounded-full"
+          >
+            <input
+              id="billing-toggle"
+              type="checkbox"
+              class="peer absolute h-4 w-8 cursor-pointer appearance-none rounded-full transition-colors duration-300 bg-blue-grayish-light-2 checked:bg-cyan-strong"
+            />
+            <label
+              for="billing-toggle"
+              class="before:content[''] absolute top-2/4 -left-1 h-5 w-5 -translate-y-2/4 cursor-pointer rounded-full bg-blue-pale shadow-md transition-all duration-300 before:absolute before:top-2/4 before:left-2/4 before:block before:h-10 before:w-10 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity hover:before:opacity-10 peer-checked:translate-x-full peer-checked:border-pink-500 peer-checked:before:bg-pink-500"
+            >
+            </label>
+          </div>
+          <label
+            for="auto-update"
+            class="mt-px ml-3 mb-0 cursor-pointer select-none font-light text-gray-700"
+          >
+            Yearly Billing <span>-25%</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li>Unlimited websites</li>
+          <li>Data ownership</li>
+          <li>Email reports</li>
+        </ul>
+      </section>
+      <button>Start my trial</button>
+    </main>
     <!-- Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
     required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
     Unlimited websites 100% data ownership Email reports Start my trial -->
