@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer range {
+  input[type="range"] {
+    @apply appearance-none;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    @apply bg-blue-grayish-light-1 rounded-full h-2.5;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none bg-cyan-strong h-10 w-10 rounded-full -translate-y-4 bg-thumb-pattern bg-no-repeat bg-center shadow-lg shadow-cyan-strong;
+  }
+}

@@ -8,7 +8,7 @@ module.exports = {
       "red-light-1": "hsl(14, 92%, 95%)",
       "red-light-2": "hsl(15, 100%, 70%)",
       "blue-pale": "hsl(226, 100%, 87%)",
-      white: "hsl (0, 0%, 100%)",
+      white: "hsl(0, 0%, 100%)",
       "blue-pale": "hsl(230, 100%, 99%)",
       "blue-grayish-light-1": "hsl(224, 65%, 95%)",
       "blue-grayish-light-2": "hsl(223, 50%, 87%)",
@@ -23,6 +23,9 @@ module.exports = {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
+    boxShadow: {
+      lg: "0px 15px 50px 2px",
+    },
     extend: {
       fontFamily: {
         manrope: ["Manrope"],
@@ -33,6 +36,7 @@ module.exports = {
       backgroundImage: {
         "circle-pattern": "url('images/pattern-circles.svg')",
         "bg-pattern": "url('images/bg-pattern.svg')",
+        "thumb-pattern": "url('images/icon-slider.svg')",
       },
     },
   },
