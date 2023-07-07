@@ -18,18 +18,18 @@
   </head>
   <body class="font-manrope flex flex-col place-items-center bg-blue-pale">
     <header
-      class="relative text-center h-96 pt-24 bg-bg-pattern bg-cover w-screen"
+      class="relative text-center h-96 pt-24 bg-bg-pattern bg-cover w-screen md:h-[50vh]"
     >
-      <h1 class="text-xl font-extra-bold mb-2">
+      <h1 class="text-xl font-extra-bold mb-2 flex justify-center">
+        <img
+          class="absolute opacity-70 top-16"
+          src="images/pattern-circles.svg"
+          alt="Circles pattern"
+        />
         Simple, traffic-based pricing
       </h1>
       <p class="text-blue-grayish text-m">Sign-up for our 30 day trial.</p>
       <p class="text-blue-grayish text-m">No credit card required.</p>
-      <img
-        class="absolute top-12 left-28 h-44 opacity-70"
-        src="images/pattern-circles.svg"
-        alt="Circles pattern"
-      />
     </header>
 
     <main
@@ -39,11 +39,11 @@
         <label
           class="text-blue-grayish uppercase tracking-wider text-sm mb-12 font-extra-bold"
           for="views-slider"
-          >100k pageviews</label
+          ><span class="views">100k</span> pageviews</label
         >
-        <input type="range" class="w-full mb-12" />
+        <input type="range" class="range w-full mb-12" min="0" max="4" />
         <h2 class="text-blue-grayish mb-12">
-          <span class="text-blue-dark text-4xl font-extra-bold mr-2"
+          <span class="price text-blue-dark text-4xl font-extra-bold mr-2"
             >$16.00</span
           >/ month
         </h2>
