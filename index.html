@@ -16,32 +16,36 @@
 
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
-  <body class="font-manrope flex flex-col place-items-center bg-blue-pale">
+  <body
+    class="font-manrope flex flex-col place-items-center bg-blue-pale overflow-x-hidden"
+  >
     <header
-      class="relative text-center h-96 pt-24 bg-bg-pattern bg-cover w-screen md:h-[50vh]"
+      class="relative text-center h-64 pt-16 md:pt-24 bg-bg-pattern bg-cover w-screen md:h-[50vh]"
     >
       <h1 class="text-xl md:text-4xl font-extra-bold mb-2 flex justify-center">
         <img
-          class="absolute opacity-60 top-16"
+          class="absolute opacity-60 top-8 md:top-16"
           src="images/pattern-circles.svg"
           alt="Circles pattern"
         />
         Simple, traffic-based pricing
       </h1>
       <div class="md:flex justify-center gap-1">
-        <p class="text-blue-grayish text-m md:text-xl">
+        <p class="text-blue-grayish text-m md:text-lg">
           Sign-up for our 30 day trial.
         </p>
-        <p class="text-blue-grayish text-m md:text-xl">
+        <p class="text-blue-grayish text-m md:text-lg">
           No credit card required.
         </p>
       </div>
     </header>
 
     <main
-      class="absolute top-64 bg-white rounded-md drop-shadow-md md:w-[44rem]"
+      class="absolute top-52 md:top-64 bg-white rounded-md drop-shadow-box md:w-[44rem]"
     >
-      <section class="grid md:grid-cols-2 items-center p-6 md:p-12 md:pb-2">
+      <section
+        class="flex flex-col md:grid md:grid-cols-2 items-center p-6 md:p-12 md:pb-2"
+      >
         <label
           class="text-blue-grayish uppercase tracking-wider text-sm md:text-m mb-12 font-extra-bold"
           for="views-slider"
@@ -54,24 +58,23 @@
           max="4"
         />
         <h2 class="text-blue-grayish mb-12 md:col-start-2 md:row-start-1">
-          <span
-            class="price text-blue-dark text-4xl md:text-5xl font-extra-bold mr-2"
+          <span class="price text-blue-dark text-4xl font-extra-bold mr-2"
             >$16.00</span
           >/ month
         </h2>
         <div
           class="flex justify-center items-center text-blue-grayish mb-12 text-m translate-x-4 col-span-2"
         >
-          <label class="mr-4 md:ml-[5.3rem] select-none" for="billing-toggle"
+          <label class="md:ml-[5.3rem] select-none" for="billing-toggle"
             >Monthly Billing</label
           >
           <div
-            class="relative inline-block h-6 w-12 cursor-pointer rounded-full"
+            class="relative inline-block h-6 w-12 cursor-pointer rounded-full mx-1"
           >
             <input
               id="billing-toggle"
               type="checkbox"
-              class="peer absolute h-6 w-12 cursor-pointer appearance-none rounded-full transition-colors duration-300 bg-blue-grayish-light-2 checked:bg-cyan-strong"
+              class="peer absolute h-6 w-12 cursor-pointer appearance-none rounded-full transition-colors duration-300 bg-blue-grayish-light-2 checked:bg-cyan-strong hover:bg-cyan-soft"
             />
             <label
               for="billing-toggle"
@@ -81,7 +84,7 @@
           </div>
           <label
             for="auto-update"
-            class="mt-px ml-4 mb-0 cursor-pointer select-none font-light text-gray-700"
+            class="mt-px mb-0 cursor-pointer select-none font-light text-gray-700"
           >
             Yearly Billing
             <span
@@ -124,20 +127,24 @@
             Email reports
           </li>
         </ul>
-        <button class="bg-blue-dark px-12 py-4 rounded-full text-blue-pale">
+        <button
+          class="bg-blue-dark px-12 py-4 rounded-full text-blue-pale hover:text-blue-grayish-light-1"
+        >
           Start my trial
         </button>
       </section>
     </main>
-    <!-- Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial -->
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <footer
+      class="absolute -bottom-20 p-4 flex flex-col place-items-center bg-blue-grayish-light-1 w-screen text-sm"
+    >
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor.</a
+        >
+      </p>
+      <p>Coded by <a href="https://github.com/nastaj">Jakub Nasta ❤️</a></p>
+    </footer>
   </body>
 </html>

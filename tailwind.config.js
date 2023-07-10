@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       "cyan-soft": "hsl(174, 77%, 80%)",
       "cyan-strong": "hsl(174, 86%, 45%)",
+      "cyan-active": "hsl(174, 86%, 35%)",
       "red-light-1": "hsl(14, 92%, 95%)",
       "red-light-2": "hsl(15, 100%, 70%)",
       "blue-pale": "hsl(226, 100%, 87%)",
@@ -23,9 +24,6 @@ module.exports = {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-    boxShadow: {
-      lg: "0px 15px 50px 2px",
-    },
     extend: {
       fontFamily: {
         manrope: ["Manrope"],
@@ -37,6 +35,9 @@ module.exports = {
         "circle-pattern": "url('images/pattern-circles.svg')",
         "bg-pattern": "url('images/bg-pattern.svg')",
         "thumb-pattern": "url('images/icon-slider.svg')",
+      },
+      dropShadow: {
+        box: "0px 5px 20px rgba(66, 68, 90, 0.1)",
       },
     },
   },

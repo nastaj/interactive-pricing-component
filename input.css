@@ -14,6 +14,6 @@
   }
 
   input[type="range"]::-webkit-slider-thumb {
-    @apply appearance-none bg-cyan-strong h-10 w-10 rounded-full -translate-y-4 bg-thumb-pattern bg-no-repeat bg-center shadow-lg shadow-cyan-strong cursor-pointer;
+    @apply appearance-none bg-cyan-strong h-10 w-10 rounded-full -translate-y-4 bg-thumb-pattern bg-no-repeat bg-center shadow-lg shadow-cyan-strong cursor-pointer hover:bg-cyan-active transition-all;
   }
 }
