@@ -20,6 +20,7 @@ class App {
   constructor() {
     rangeEl.addEventListener("input", this._updatePricing.bind(this));
     btnBilling.addEventListener("change", this._setBillingType.bind(this));
+    btnBilling.addEventListener("change", this._updateProgressBar.bind(this));
   }
 
   _updatePricing() {
@@ -27,6 +28,7 @@ class App {
     this.#views = viewsPriceRatio[this.#rangeValue].pageviews;
     this.#price = viewsPriceRatio[this.#rangeValue].price.toFixed(2);
 
+    this._updateProgressBar();
     this._renderViewsPrice();
   }
 
@@ -41,6 +43,11 @@ class App {
     btnBilling.checked ? (this.#isYearly = true) : (this.#isYearly = false);
 
     this._updatePricing();
+  }
+
+  _updateProgressBar() {
+    const valPercent = (rangeEl.value / rangeEl.max) * 100;
+    rangeEl.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) ${valPercent}%, hsl(224, 65%, 95%) ${valPercent}%)`;
   }
 }
 

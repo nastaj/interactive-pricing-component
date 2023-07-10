@@ -20,37 +20,49 @@
     <header
       class="relative text-center h-96 pt-24 bg-bg-pattern bg-cover w-screen md:h-[50vh]"
     >
-      <h1 class="text-xl font-extra-bold mb-2 flex justify-center">
+      <h1 class="text-xl md:text-4xl font-extra-bold mb-2 flex justify-center">
         <img
-          class="absolute opacity-70 top-16"
+          class="absolute opacity-60 top-16"
           src="images/pattern-circles.svg"
           alt="Circles pattern"
         />
         Simple, traffic-based pricing
       </h1>
-      <p class="text-blue-grayish text-m">Sign-up for our 30 day trial.</p>
-      <p class="text-blue-grayish text-m">No credit card required.</p>
+      <div class="md:flex justify-center gap-1">
+        <p class="text-blue-grayish text-m md:text-xl">
+          Sign-up for our 30 day trial.
+        </p>
+        <p class="text-blue-grayish text-m md:text-xl">
+          No credit card required.
+        </p>
+      </div>
     </header>
 
     <main
-      class="absolute top-64 bg-white flex flex-col place-items-center rounded-md shadow-sm"
+      class="absolute top-64 bg-white rounded-md drop-shadow-md md:w-[44rem]"
     >
-      <section class="flex flex-col place-items-center p-6">
+      <section class="grid md:grid-cols-2 items-center p-6 md:p-12 md:pb-2">
         <label
-          class="text-blue-grayish uppercase tracking-wider text-sm mb-12 font-extra-bold"
+          class="text-blue-grayish uppercase tracking-wider text-sm md:text-m mb-12 font-extra-bold"
           for="views-slider"
           ><span class="views">100k</span> pageviews</label
         >
-        <input type="range" class="range w-full mb-12" min="0" max="4" />
-        <h2 class="text-blue-grayish mb-12">
-          <span class="price text-blue-dark text-4xl font-extra-bold mr-2"
+        <input
+          type="range"
+          class="range w-full rounded-full mb-12 md:col-span-full bg-gradient-to-r from-cyan-soft from-50% to bg-blue-grayish-light-1 to-50%"
+          min="0"
+          max="4"
+        />
+        <h2 class="text-blue-grayish mb-12 md:col-start-2 md:row-start-1">
+          <span
+            class="price text-blue-dark text-4xl md:text-5xl font-extra-bold mr-2"
             >$16.00</span
           >/ month
         </h2>
         <div
-          class="flex justify-center items-center text-blue-grayish mb-12 text-m translate-x-4"
+          class="flex justify-center items-center text-blue-grayish mb-12 text-m translate-x-4 col-span-2"
         >
-          <label class="mr-4 select-none" for="billing-toggle"
+          <label class="mr-4 md:ml-[5.3rem] select-none" for="billing-toggle"
             >Monthly Billing</label
           >
           <div
@@ -72,14 +84,16 @@
             class="mt-px ml-4 mb-0 cursor-pointer select-none font-light text-gray-700"
           >
             Yearly Billing
-            <span class="text-red-light-2 bg-red-light-1 px-2 py-1 rounded-full"
-              >-25%</span
+            <span
+              class="text-red-light-2 md:ml-2 bg-red-light-1 px-2 py-1 rounded-full"
+              >-25% <span class="hidden md:inline-block">discount</span></span
             >
           </label>
         </div>
       </section>
+
       <section
-        class="border-t border-blue-grayish-light-2 w-full py-8 flex flex-col justify-center items-center"
+        class="border-t border-blue-grayish-light-2 w-full py-8 grid md:grid-cols-2 place-items-center"
       >
         <ul class="mb-8 text-blue-grayish">
           <li class="mb-3 flex gap-4 items-center">
